@@ -1,0 +1,34 @@
+# Hugo
+public/
+resources/_gen/
+.hugo_build.lock
+
+# Build artifacts
+*.log
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Tooling / local browser state
+.playwright-cli/
+
+# Node dependencies, if tooling is added later
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

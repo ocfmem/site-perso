@@ -1,0 +1,175 @@
+baseURL = '/'
+languageCode = 'fr-fr'
+defaultContentLanguage = 'fr'
+defaultContentLanguageInSubdir = false
+title = 'Meddy MENZIKOFF - C.T.O.'
+theme = 'terminal'
+copyright = '© 2026 Meddy Menzikoff'
+enableRobotsTXT = true
+summaryLength = 45
+
+[sitemap]
+  changefreq = 'weekly'
+  priority = 0.5
+  filename = 'sitemap.xml'
+
+pagination.pagerSize = 6
+
+[markup.highlight]
+  noClasses = false
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[params]
+  contentTypeName = 'posts'
+  showMenuItems = 7
+  showLanguageSelector = true
+  fullWidthTheme = false
+  centerTheme = true
+  autoCover = true
+  readingTime = true
+  Toc = true
+  TocTitle = 'Sommaire'
+  showLastUpdated = true
+  updatedDatePrefix = 'Mise à jour :'
+  dateFormat = '2006-01-02'
+
+[languages]
+  [languages.fr]
+    languageName = 'Français'
+    title = 'Meddy MENZIKOFF - C.T.O.'
+
+    [languages.fr.params]
+      subtitle = 'Bio, articles, projets, services, CV, conférences et contact'
+      keywords = 'cloud, aws, serverless, ia, devops, saas'
+      menuMore = 'Voir plus'
+      readMore = 'Lire la suite'
+      readOtherPosts = 'Autres articles'
+      newerPosts = 'Articles récents'
+      olderPosts = 'Articles plus anciens'
+      missingContentMessage = 'Page introuvable...'
+      missingBackButtonLabel = 'Retour à l’accueil'
+      minuteReadingTime = 'min de lecture'
+      words = 'mots'
+
+      [languages.fr.params.seo]
+        personName = 'Meddy Menzikoff'
+        personTitle = 'CTO Hands-on / Architecte & DevOps Cloud AWS'
+        personImage = '/img/meddy-menzikoff-bio.webp'
+        sameAs = [
+          'https://www.linkedin.com/in/meddy-menzikoff/',
+          'https://github.com/ocfmem',
+          'https://www.doyoubuzz.com/meddy-menzikoff',
+          'https://www.oneclickflare.fr/'
+        ]
+
+      [languages.fr.params.logo]
+        logoText = 'Meddy MENZIKOFF - C.T.O.'
+        logoHomeLink = '/'
+
+    [languages.fr.menu]
+      [[languages.fr.menu.main]]
+        identifier = 'blog'
+        name = 'Blog'
+        url = '/posts'
+        weight = 10
+      [[languages.fr.menu.main]]
+        identifier = 'bio'
+        name = 'Bio'
+        url = '/bio'
+        weight = 20
+      [[languages.fr.menu.main]]
+        identifier = 'projets'
+        name = 'Projets'
+        url = '/projets'
+        weight = 30
+      [[languages.fr.menu.main]]
+        identifier = 'services'
+        name = 'Services'
+        url = '/services'
+        weight = 40
+      [[languages.fr.menu.main]]
+        identifier = 'cv'
+        name = 'CV'
+        url = '/cv'
+        weight = 50
+      [[languages.fr.menu.main]]
+        identifier = 'conferences'
+        name = 'Conférences'
+        url = '/conferences'
+        weight = 55
+      [[languages.fr.menu.main]]
+        identifier = 'contact'
+        name = 'Contact'
+        url = '/contact'
+        weight = 60
+
+  [languages.en]
+    languageName = 'English'
+    title = 'Meddy MENZIKOFF - CTO'
+
+    [languages.en.params]
+      subtitle = 'Bio, articles, projects, services, resume, conferences and contact'
+      keywords = 'cloud, aws, serverless, ai, devops, saas'
+      menuMore = 'Show more'
+      readMore = 'Read more'
+      readOtherPosts = 'Other posts'
+      newerPosts = 'Recent posts'
+      olderPosts = 'Older posts'
+      missingContentMessage = 'Page not found...'
+      missingBackButtonLabel = 'Back to homepage'
+      minuteReadingTime = 'min read'
+      words = 'words'
+
+      [languages.en.params.seo]
+        personName = 'Meddy Menzikoff'
+        personTitle = 'Hands-on CTO / Cloud Architect & DevOps AWS'
+        personImage = '/img/meddy-menzikoff-bio.webp'
+        sameAs = [
+          'https://www.linkedin.com/in/meddy-menzikoff/',
+          'https://github.com/ocfmem',
+          'https://www.doyoubuzz.com/meddy-menzikoff',
+          'https://www.oneclickflare.fr/'
+        ]
+
+      [languages.en.params.logo]
+        logoText = 'Meddy MENZIKOFF - CTO'
+        logoHomeLink = '/en/'
+
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = 'blog'
+        name = 'Blog'
+        url = '/en/posts'
+        weight = 10
+      [[languages.en.menu.main]]
+        identifier = 'bio'
+        name = 'Bio'
+        url = '/en/bio'
+        weight = 20
+      [[languages.en.menu.main]]
+        identifier = 'projets'
+        name = 'Projects'
+        url = '/en/projects'
+        weight = 30
+      [[languages.en.menu.main]]
+        identifier = 'services'
+        name = 'Services'
+        url = '/en/services'
+        weight = 40
+      [[languages.en.menu.main]]
+        identifier = 'cv'
+        name = 'Resume'
+        url = '/en/cv'
+        weight = 50
+      [[languages.en.menu.main]]
+        identifier = 'conferences'
+        name = 'Conferences'
+        url = '/en/conferences'
+        weight = 55
+      [[languages.en.menu.main]]
+        identifier = 'contact'
+        name = 'Contact'
+        url = '/en/contact'
+        weight = 60

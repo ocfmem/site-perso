@@ -1,0 +1,72 @@
+{{- $siteURL := .Site.BaseURL -}}
+{{- $siteTitle := .Site.Title -}}
+{{- $siteDescription := .Site.Params.Subtitle | default .Site.Params.description -}}
+{{- $personName := $siteTitle -}}
+{{- $personTitle := "" -}}
+{{- $personImage := ("og-image.png" | absURL) -}}
+{{- $sameAs := slice -}}
+
+{{- with .Site.Params.seo.personName }}{{ $personName = . }}{{ end -}}
+{{- with .Site.Params.seo.personTitle }}{{ $personTitle = . }}{{ end -}}
+{{- with .Site.Params.seo.personImage }}{{ $personImage = . | absURL }}{{ end -}}
+{{- with .Site.Params.seo.sameAs }}{{ $sameAs = . }}{{ end -}}
+
+{{- if .IsHome -}}
+  {{- $website := dict
+    "@type" "WebSite"
+    "@id" (printf "%s#website" $siteURL)
+    "url" $siteURL
+    "name" $siteTitle
+    "description" $siteDescription
+    "inLanguage" .Site.Language.Lang
+  -}}
+
+  {{- $person := dict
+    "@type" "Person"
+    "@id" (printf "%s#person" $siteURL)
+    "name" $personName
+    "url" $siteURL
+    "image" $personImage
+  -}}
+  {{- with $personTitle }}{{ $person = merge $person (dict "jobTitle" .) }}{{ end -}}
+  {{- with $sameAs }}{{ $person = merge $person (dict "sameAs" .) }}{{ end -}}
+
+  {{- $jsonLd := dict "@context" "https://schema.org" "@graph" (slice $website $person) -}}
+  <script type="application/ld+json">{{ $jsonLd | jsonify | safeJS }}</script>
+{{- else if .IsPage -}}
+  {{- $defaultImage := ("og-image.png" | absURL) -}}
+  {{- $pageImage := $defaultImage -}}
+  {{- if (isset .Params "cover") -}}
+    {{- $pageCover := .Param "cover" -}}
+    {{- with (.Resources.GetMatch (.Param "cover")) -}}
+      {{- $pageCover = .RelPermalink -}}
+    {{- end -}}
+    {{- $pageImage = $pageCover | absURL -}}
+  {{- end -}}
+
+  {{- $type := "WebPage" -}}
+  {{- if eq .Section "posts" }}{{ $type = "Article" }}{{ end -}}
+
+  {{- $pageData := dict
+    "@context" "https://schema.org"
+    "@type" $type
+    "mainEntityOfPage" .Permalink
+    "headline" .Title
+    "description" (.Description | default (.Summary | plainify))
+    "url" .Permalink
+    "inLanguage" .Site.Language.Lang
+    "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+    "image" (slice $pageImage)
+  -}}
+  {{- if isset .Params "date" -}}
+    {{- $pageData = merge $pageData (dict "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")) -}}
+  {{- end -}}
+
+  {{- if eq .Section "posts" -}}
+    {{- $author := dict "@type" "Person" "name" (.Params.Author | default $personName) -}}
+    {{- $publisher := dict "@type" "Organization" "name" $siteTitle "logo" (dict "@type" "ImageObject" "url" $defaultImage) -}}
+    {{- $pageData = merge $pageData (dict "author" $author "publisher" $publisher) -}}
+  {{- end -}}
+
+  <script type="application/ld+json">{{ $pageData | jsonify | safeJS }}</script>
+{{- end -}}
