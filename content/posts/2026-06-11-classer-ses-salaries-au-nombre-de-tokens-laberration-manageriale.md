@@ -36,3 +36,12 @@ Sauf que ce ratio non plus ne tient pas dans une jauge. Comparer le « rendement
 Mesurer la consommation de tokens, c'est prendre le thermomètre pour la fièvre. Au mieux, c'est inutile. Au pire, on installe une surveillance qui grignote la confiance et pousse chacun à optimiser le mauvais chiffre — pendant que le vrai travail, lui, attend. La meilleure preuve ? Le reflux est déjà là : le classement de Meta a disparu après le tollé médiatique, Walmart a plafonné l'usage interne de l'IA, et des dirigeants — d'Uber à plusieurs investisseurs — admettent désormais tout haut que ces tokens dépensés ne se traduisent par aucun gain à l'échelle de l'entreprise. Mi-2026, « tokenmaxxing » ne désigne déjà plus une stratégie à suivre, mais la dérive qu'on cherche à enrayer. Quand une métrique s'effondre aussi vite qu'on l'érige, c'est qu'elle ne mesurait pas grand-chose.
 
 La question n'a jamais été « qui consomme le plus ? », ni même « qui consomme le mieux ? ». Elle reste, exactement comme avant l'IA : qui résout les bons problèmes, et bien ? Aucun compteur de tokens ne répondra jamais à celle-là. Et le jour où un manager pense le contraire, ce n'est peut-être pas le salarié qu'il faudrait classer.
+
+## Sources
+
+- [Fortune — « Meta killed employee AI token dashboard »](https://fortune.com/2026/04/09/meta-killed-employee-ai-token-dashboard/) — d'après la révélation initiale de *The Information*.
+- [Fortune — « Tokenmaxxing is dead »](https://fortune.com/2026/05/28/tokenmaxxing-is-dead-companies-didnt-get-the-roi-from-ai-they-wanted-to-see/) — sur l'absence de ROI, avec les propos du COO d'Uber.
+- [CNBC — le suivi généralisé de l'usage de l'IA dans les entreprises du Fortune 500](https://www.cnbc.com/2026/05/05/ai-use-work-employee-monitoring-tech-surveillance.html).
+- [CIO — « Tokenmaxxing: When AI adoption metrics go bad »](https://www.cio.com/article/4178320/tokenmaxxing-when-ai-adoption-metrics-go-bad.html) — Amazon, JPMorgan, Disney.
+- [IT Brew — « Is the tokenmaxxing era over? »](https://www.itbrew.com/stories/is-the-tokenmaxxing-era-over) — sur le plafonnement de l'usage chez Walmart.
+- [The Decoder — le classement interne de Meta et ses limites](https://the-decoder.com/meta-employees-compete-for-token-consumption-on-an-internal-ai-leaderboard/).

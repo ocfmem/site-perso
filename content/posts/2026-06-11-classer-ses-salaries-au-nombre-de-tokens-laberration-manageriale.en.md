@@ -37,3 +37,12 @@ Except that this ratio doesn't fit in a gauge either. Comparing the "yield" of a
 Measuring token consumption is mistaking the thermometer for the fever. At best, it's useless. At worst, you install a form of surveillance that erodes trust and pushes everyone to optimize the wrong number — while the real work waits. The best proof? The backlash is already here: Meta's leaderboard disappeared after the media uproar, Walmart capped internal AI usage, and executives — from Uber to several investors — now openly admit that these tokens spent translate into no gain at the company level. By mid-2026, "tokenmaxxing" no longer refers to a strategy to follow, but to the drift everyone is trying to curb. When a metric collapses as fast as it was erected, it wasn't measuring much.
 
 The question was never "who consumes the most?", nor even "who consumes the best?". It remains, exactly as it was before AI: who solves the right problems, and solves them well? No token counter will ever answer that one. And the day a manager thinks otherwise, maybe it isn't the employee who ought to be ranked.
+
+## Sources
+
+- [Fortune — "Meta killed employee AI token dashboard"](https://fortune.com/2026/04/09/meta-killed-employee-ai-token-dashboard/) — based on the initial report by *The Information*.
+- [Fortune — "Tokenmaxxing is dead"](https://fortune.com/2026/05/28/tokenmaxxing-is-dead-companies-didnt-get-the-roi-from-ai-they-wanted-to-see/) — on the lack of ROI, with comments from Uber's COO.
+- [CNBC — on the widespread monitoring of AI usage across Fortune 500 companies](https://www.cnbc.com/2026/05/05/ai-use-work-employee-monitoring-tech-surveillance.html).
+- [CIO — "Tokenmaxxing: When AI adoption metrics go bad"](https://www.cio.com/article/4178320/tokenmaxxing-when-ai-adoption-metrics-go-bad.html) — Amazon, JPMorgan, Disney.
+- [IT Brew — "Is the tokenmaxxing era over?"](https://www.itbrew.com/stories/is-the-tokenmaxxing-era-over) — on Walmart capping internal usage.
+- [The Decoder — on Meta's internal leaderboard and its limits](https://the-decoder.com/meta-employees-compete-for-token-consumption-on-an-internal-ai-leaderboard/).
