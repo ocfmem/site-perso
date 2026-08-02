@@ -84,6 +84,8 @@ An autopilot's autonomy operates in the execution, never in the choice of route.
 
 Aviation has never confused autonomy with freedom.
 
+Meanwhile, it is the Hermes and the OpenClaws that draw the crowds, and their whole promise fits on one line: give it the goal, the agent will work it out.
+
 An autonomous agent, by contrast, receives nothing but a goal. The route it invents at runtime, and it will invent a different one next time.
 
 Designing an agent's reasoning path is not putting it on a leash. It is what makes it shippable, and it is the only thing that tells it apart from the one next door.

@@ -83,6 +83,8 @@ L'autonomie du pilote automatique s'exerce dans l'exécution, jamais dans le cho
 
 L'aéronautique n'a jamais confondu autonomie et liberté.
 
+Pendant ce temps, on s'enthousiasme pour les Hermes et les OpenClaw, dont toute la promesse tient en une ligne: donnez l'objectif, l'agent se débrouille.
+
 Un agent autonome, lui, ne reçoit qu'un objectif. La route, il l'invente à l'exécution, et il en inventera une autre la fois suivante.
 
 Concevoir le parcours de réflexion d'un agent, ce n'est pas le brider. C'est ce qui le rend livrable, et c'est la seule chose qui le distingue de celui du voisin.
