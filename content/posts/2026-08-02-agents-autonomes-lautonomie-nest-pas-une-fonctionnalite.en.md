@@ -76,6 +76,8 @@ The rule I apply fits in one sentence: the workflow is the default answer, and i
 
 ## The flight plan
 
+There is an industry that has been practising autonomy at scale for fifty years, and that settled the question long before we did.
+
 An autopilot is one of the most accomplished autonomous systems we have ever built. It holds a heading, an altitude, flies an approach, continuously corrects for disturbances nobody had anticipated, and yet it follows a flight plan filed in advance, with its waypoints, its imposed altitudes and its minima.
 
 An autopilot's autonomy operates in the execution, never in the choice of route. Someone stays responsible, and can take back control at any moment.
