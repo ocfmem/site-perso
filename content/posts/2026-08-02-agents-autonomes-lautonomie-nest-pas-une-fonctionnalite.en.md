@@ -76,7 +76,7 @@ The rule I apply fits in one sentence: the workflow is the default answer, and i
 
 ## The flight plan
 
-There is an industry that has been practising autonomy at scale for fifty years, and that settled the question long before we did. An autopilot is an extremely autonomous system: it holds a heading, an altitude, flies an approach, continuously corrects for disturbances nobody had anticipated. And it has never, not once, chosen its destination. It follows a flight plan filed in advance, with waypoints, imposed altitudes and minima. Someone stays responsible, and can take back control at any moment.
+There is an industry that has been practising autonomy at scale for fifty years, and that settled the question long before we did. An autopilot is an extremely autonomous system: it holds a heading, an altitude, flies an approach, continuously corrects for disturbances nobody had anticipated. The destination is given by the pilot, and an AI agent receives its own in exactly the same way. The difference lies in what gets added: a flight plan filed in advance, with its waypoints, its imposed altitudes and its minima. An autopilot's autonomy operates in the execution, never in the choice of route. Someone stays responsible, and can take back control at any moment.
 
 Aviation has never confused autonomy with freedom.
 

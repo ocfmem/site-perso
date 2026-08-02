@@ -75,7 +75,7 @@ La règle que j'applique tient en une phrase: le workflow est la réponse par d�
 
 ## Le plan de vol
 
-Il y a une industrie qui pratique l'autonomie à grande échelle depuis cinquante ans, et qui a réglé la question bien avant nous. Un pilote automatique est un système extrêmement autonome: il tient un cap, une altitude, exécute une approche, corrige en permanence des perturbations que personne n'avait prévues. Et il n'a jamais, pas une seule fois, choisi sa destination. Il suit un plan de vol déposé à l'avance, avec des points de passage, des altitudes imposées et des minima. Quelqu'un reste responsable, et peut reprendre la main à tout instant.
+Il y a une industrie qui pratique l'autonomie à grande échelle depuis cinquante ans, et qui a réglé la question bien avant nous. Un pilote automatique est un système extrêmement autonome: il tient un cap, une altitude, exécute une approche, corrige en permanence des perturbations que personne n'avait prévues. La destination, c'est le pilote qui la donne, et un agent IA reçoit la sienne de la même façon. La différence tient à ce qu'on ajoute: un plan de vol déposé à l'avance, avec ses points de passage, ses altitudes imposées et ses minima. L'autonomie du pilote automatique s'exerce dans l'exécution, jamais dans le choix de la route. Quelqu'un reste responsable, et peut reprendre la main à tout instant.
 
 L'aéronautique n'a jamais confondu autonomie et liberté.
 
