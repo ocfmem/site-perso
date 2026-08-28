@@ -16,10 +16,13 @@ Some examples of projects on which I have had the opportunity to work in recent 
 Design and development of a SaaS dedicated to hosting AI agents.
 
 Main contributions:
-- Definition of a **100% serverless stack**.
-- Design of the cloud architecture and technical foundations.
+- Definition of a **100% serverless stack** (API Gateway, Lambda, DynamoDB, Step Functions).
+- Design of the **multi-tenant isolation** model, with a dedicated IAM role per deployed agent.
+- Automated deployment pipeline, from GitHub repository to production service with no human involved.
+- **Terraform** industrialization (22 modules, reproducible environments).
 - Development of business agents (Google Ads, SEO, daily reporting).
-- Strengthening operational robustness, observability and reliability.
+
+**[Read the full case study →](/en/projects/hollowhost/)**
 
 ## [SoundisiaK Studio](https://use.soundisiak.studio/)
 **Role: CTO and AWS serverless expert**
