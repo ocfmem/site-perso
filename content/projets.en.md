@@ -33,8 +33,12 @@ Overall technical support on the development and AWS Cloud Architecture of the p
 
 Main contributions:
 - Implementation of a **100% serverless stack**: Cognito, API Gateway, Lambda (Python + Docker), Step Functions, DynamoDB, S3, EventBridge, SQS/SNS.
-- Management of Front-End development in **Next.js** (TypeScript).
-- Integration of Stripe and implementation of CI/CD pipelines (GitHub Actions).
+- Design of the **serverless audio pipeline** (containerized transcoding in Lambda, lossless derivatives, waveforms).
+- Private delivery through **signed CloudFront URLs**, with automatically expiring share links.
+- **Stripe** integration through an EventBridge partner bus and state machines (subscriptions, quotas).
+- Management of Front-End development in **Next.js** (TypeScript) and implementation of CI/CD pipelines (GitHub Actions).
+
+**[Read the full case study →](/en/projects/soundisiak/)**
 
 ## [AdsWizard](https://www.adswizard.com/fr/)
 **Role: AWS & Data Platform Architect**
