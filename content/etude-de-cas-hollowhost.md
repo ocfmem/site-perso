@@ -7,7 +7,7 @@ url = '/projets/hollowhost/'
 Toc = true
 +++
 
-[HollowHost](https://use.hollowhost.com/) est un SaaS que j'ai conçu et développé de bout en bout. Il transforme un dépôt GitHub en agent IA hébergé: l'utilisateur connecte son dépôt, configure ses variables d'environnement et ses secrets depuis un dashboard web, puis déclenche des exécutions à la demande ou sur planification cron. Il ne voit jamais l'infrastructure. Pas d'instance à dimensionner, pas de pipeline CI à écrire, pas de registre d'images à gérer.
+[HollowHost](https://hollowhost.com/) est un SaaS que j'ai conçu et développé de bout en bout. Il transforme un dépôt GitHub en agent IA hébergé: l'utilisateur connecte son dépôt, configure ses variables d'environnement et ses secrets depuis un dashboard web, puis déclenche des exécutions à la demande ou sur planification cron. Il ne voit jamais l'infrastructure. Pas d'instance à dimensionner, pas de pipeline CI à écrire, pas de registre d'images à gérer.
 
 La plateforme propose deux modes d'exécution: les **AI Jobs**, des exécutions à la demande ou planifiées portées par AWS Lambda, et les **Daemons**, des runtimes persistants pour les agents qui doivent rester en vie.
 

@@ -7,7 +7,7 @@ url = '/en/projects/hollowhost/'
 Toc = true
 +++
 
-[HollowHost](https://use.hollowhost.com/) is a SaaS I designed and built end to end. It turns a GitHub repository into a hosted AI agent: the user connects their repository, configures environment variables and secrets from a web dashboard, then triggers executions on demand or on a cron schedule. They never see the infrastructure. No instance to size, no CI pipeline to write, no image registry to manage.
+[HollowHost](https://hollowhost.com/) is a SaaS I designed and built end to end. It turns a GitHub repository into a hosted AI agent: the user connects their repository, configures environment variables and secrets from a web dashboard, then triggers executions on demand or on a cron schedule. They never see the infrastructure. No instance to size, no CI pipeline to write, no image registry to manage.
 
 The platform offers two execution modes: **AI Jobs**, on-demand or scheduled executions powered by AWS Lambda, and **Daemons**, persistent runtimes for agents that need to stay alive.
 

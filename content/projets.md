@@ -8,7 +8,7 @@ Toc = false
 
 Quelques exemples de projets sur lesquels j’ai eu l’opportunité d’intervenir ces dernières années.
 
-## [HollowHost](https://use.hollowhost.com/)
+## [HollowHost](https://hollowhost.com/)
 **Rôle : Architecte Cloud & IA / Lead Developer SaaS**
 
 *HollowHost est une plateforme permettant de déployer des agents IA en un clic depuis un dépôt GitHub, sans gérer l’infrastructure sous-jacente.*
@@ -24,7 +24,7 @@ Principales contributions :
 
 **[Lire l’étude de cas complète →](/projets/hollowhost/)**
 
-## [SoundisiaK Studio](https://use.soundisiak.studio/)
+## [SoundisiaK Studio](https://soundisiak.studio/)
 **Rôle : CTO et expert AWS Serverless**
 
 *SoundisiaK Studio est une plateforme de collaboration pour la production musicale, avec gestion de versions, suivi de workflow et travail en équipe.*
