@@ -1,0 +1,46 @@
+{{- $fr := eq .Page.Language.Lang "fr" -}}
+{{- $before := cond $fr "AVANT LE 28 JUILLET" "BEFORE 28 JULY" -}}
+{{- $after := cond $fr "DEPUIS LE 28 JUILLET" "SINCE 28 JULY" -}}
+{{- $capBefore := cond $fr "la passerelle doit ouvrir le corps JSON pour les distinguer" "the gateway must open the JSON body to tell them apart" -}}
+{{- $capAfter := cond $fr "la passerelle lit l'intention sur l'enveloppe" "the gateway reads the intent on the envelope" -}}
+{{- $v1 := cond $fr "mise en cache" "cached" -}}
+{{- $v2 := cond $fr "100 / min" "100 / min" -}}
+{{- $v3 := cond $fr "refusé" "refused" -}}
+{{- $alt := cond $fr "Avant, la passerelle voit trois requêtes POST /mcp identiques. Depuis, chaque requête porte les en-têtes Mcp-Method et Mcp-Name, ce qui permet de les traiter différemment." "Before, the gateway sees three identical POST /mcp requests. Since, each request carries the Mcp-Method and Mcp-Name headers, allowing each to be handled differently." -}}
+<figure class="mcpdiag" style="margin:2.2rem 0;padding:0;width:100%;max-width:100%;overflow-x:auto">
+<svg style="width:100%;min-width:600px;height:auto;display:block" viewBox="0 0 720 372" role="img" aria-label="{{ $alt }}" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .mcpdiag-svg-label{fill:currentColor;opacity:.5;font-size:12px;letter-spacing:1.5px}
+    .mcpdiag-svg-box{fill:none;stroke:currentColor;stroke-opacity:.22;rx:3}
+    .mcpdiag-svg-base{fill:currentColor;opacity:.75;font-size:13px}
+    .mcpdiag-svg-new{fill:var(--accent);font-size:13px}
+    .mcpdiag-svg-verdict{fill:currentColor;opacity:.45;font-size:12px}
+    .mcpdiag-svg-cap{fill:currentColor;opacity:.55;font-size:12px}
+    .mcpdiag svg text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+  </style>
+
+  <text x="0" y="14" class="mcpdiag-svg-label">{{ $before }}</text>
+  <rect x="0" y="26" width="560" height="30" class="mcpdiag-svg-box"/>
+  <rect x="0" y="62" width="560" height="30" class="mcpdiag-svg-box"/>
+  <rect x="0" y="98" width="560" height="30" class="mcpdiag-svg-box"/>
+  <text x="14" y="46" class="mcpdiag-svg-base">POST /mcp</text>
+  <text x="14" y="82" class="mcpdiag-svg-base">POST /mcp</text>
+  <text x="14" y="118" class="mcpdiag-svg-base">POST /mcp</text>
+  <text x="584" y="46" class="mcpdiag-svg-verdict">?</text>
+  <text x="584" y="82" class="mcpdiag-svg-verdict">?</text>
+  <text x="584" y="118" class="mcpdiag-svg-verdict">?</text>
+  <text x="0" y="152" class="mcpdiag-svg-cap">{{ $capBefore }}</text>
+
+  <text x="0" y="222" class="mcpdiag-svg-label">{{ $after }}</text>
+  <rect x="0" y="234" width="560" height="30" class="mcpdiag-svg-box"/>
+  <rect x="0" y="270" width="560" height="30" class="mcpdiag-svg-box"/>
+  <rect x="0" y="306" width="560" height="30" class="mcpdiag-svg-box"/>
+  <text x="14" y="254" class="mcpdiag-svg-base">POST /mcp<tspan class="mcpdiag-svg-new" dx="14">Mcp-Method: tools/list</tspan></text>
+  <text x="14" y="290" class="mcpdiag-svg-base">POST /mcp<tspan class="mcpdiag-svg-new" dx="14">Mcp-Method: tools/call  Mcp-Name: search</tspan></text>
+  <text x="14" y="326" class="mcpdiag-svg-base">POST /mcp<tspan class="mcpdiag-svg-new" dx="14">Mcp-Method: tools/call  Mcp-Name: delete_customer</tspan></text>
+  <text x="584" y="254" class="mcpdiag-svg-verdict">{{ $v1 }}</text>
+  <text x="584" y="290" class="mcpdiag-svg-verdict">{{ $v2 }}</text>
+  <text x="584" y="326" class="mcpdiag-svg-verdict">{{ $v3 }}</text>
+  <text x="0" y="360" class="mcpdiag-svg-cap">{{ $capAfter }}</text>
+</svg>
+</figure>
