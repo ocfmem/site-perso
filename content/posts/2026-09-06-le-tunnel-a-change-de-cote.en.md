@@ -12,15 +12,15 @@ A client sends me forty pages of specifications. The document is clean: table of
 
 Problem: that model describes a system which does not exist. Not a future system or an evolution of it, but an imaginary one. Plausible and coherent, but unrelated to the one we have been building for months.
 
-Let me be clear straight away, because it is the heart of the matter: this client is doing what seems obvious to him. He spent time on that document. He produced it because he believed that handing developers a complete specification was the best thing he could do for the project.
+Let me be clear straight away, because it is the heart of the matter: this client is doing what seems obvious to them. They spent time on that document. They produced it because they believed that handing developers a complete specification was the best thing they could do for the project.
 
-And there is something else I understand without any effort: AI has given him the means to get involved in the technical build as he never could before. We developers know exactly how exhilarating that is. I find it hard to hold it against him.
+And there is something else I understand without any effort: AI has given them the means to get involved in the technical build as they never could before. We developers know exactly how exhilarating that is. I find it hard to hold it against them.
 
 ## The intent is good, and that is what makes the problem interesting
 
 For fifteen years we asked for specs. We complained about three-line requests in a ticket, about requirements that changed once development had started, about business decisions we only got by asking three times. The business heard us. It now turns up with forty pages.
 
-Nobody is cheating. That is what makes the phenomenon interesting, and it is also why it will not correct itself: every signal tells the project owner that he did good work.
+Nobody is cheating. That is what makes the phenomenon interesting, and it is also why it will not correct itself: every signal tells the project owner that they did good work.
 
 Except the document has three defects that recur with metronomic regularity. It is verbose. It contradicts itself from one section to the next because nobody reads forty pages with the attention they give to four.
 
@@ -34,7 +34,7 @@ A specification never had its value in the document. Its value was the negotiati
 
 That negotiation is where the business discovers what its idea costs: this one, three days; that one, three months, because the orders table is shared with billing. It is also where engineering discovers what the business actually wants, which is almost never what it asked for. The document that came out of it was only the minutes of that discovery.
 
-Nothing new here, and that is exactly the problem: we have known it for twenty-five years. In 2001, Ron Jeffries formalised the three Cs of the user story (*Card, Conversation, Confirmation*) precisely to distinguish the "social" story from the documentary practices that came before. The card is not the requirement: it is the pretext for the conversation in which the requirement gets built. In 2014, Jeff Patton summed the matter up in a sentence that became the most quoted line of his book: shared documents are not shared understanding. He illustrates it with the telephone game, and with the Mars Climate Orbiter probe, lost in 1999 over a units mix-up everyone thought was obvious.
+Nothing new here, and that is exactly the problem: we have known it for twenty-five years. In 2001, Ron Jeffries formalised the three Cs of the user story (*Card, Conversation, Confirmation*) precisely to distinguish the "social" story from the documentary practices that came before. The card is not the requirement: it is the pretext for the conversation in which the requirement gets built. In 2014, Jeff Patton summed the matter up in a sentence that became the most quoted line of the book: shared documents are not shared understanding. Patton illustrates it with the telephone game, and with the Mars Climate Orbiter probe, lost in 1999 over a units mix-up everyone thought was obvious.
 
 So where does knowledge of the existing system live? Nowhere in a document. It lives in that conversation. Generating the specification upfront and alone therefore does not shorten design: it deletes it. And you discover the deletion at implementation time, which is to say at the most expensive point.
 
@@ -42,7 +42,7 @@ So where does knowledge of the existing system live? Nowhere in a document. It l
 
 Tunnel vision, in this trade, has always meant the same risk: an engineering team puts its head down and comes back out three months later with something that was not what was needed. The whole agile arsenal (reviews, demos, discovery workshops, a PO embedded in the team) was invented to cut windows into that tunnel.
 
-AI has just dug the same tunnel on the other side of the table. The project owner now works alone, with an interlocutor that never contradicts him and congratulates him on his brilliant ideas, that does not know his system unless it is handed over (access to the databases, to the code, and so on), and that never asks him why. He comes out with forty pages and the conviction that he has made progress.
+AI has just dug the same tunnel on the other side of the table. The project owner now works alone, with an interlocutor that never contradicts them and congratulates them on their brilliant ideas, that does not know their system unless it is handed over (access to the databases, to the code, and so on), and that never asks them why. They come out with forty pages and the conviction that they have made progress.
 
 Nobody has a ritual for detecting that, for a simple reason: we never needed to protect the business from itself. All our safeguards face the other way.
 
@@ -62,11 +62,11 @@ That leaves the scenario I dread, and it is anything but theoretical: the engine
 
 I do not send the document back. I do three things, in this order.
 
-I tell the client plainly that inconsistent material does not save me time: it costs me time. It is the most useful sentence of the exchange, and the one most rarely spoken, because it sounds ungracious. It is not: as long as he believes he is helping me, he will carry on.
+I tell the client plainly that inconsistent material does not save me time: it costs me time. It is the most useful sentence of the exchange, and the one most rarely spoken, because it sounds ungracious. It is not: as long as they believe they are helping me, they will carry on.
 
-Then I guide him, on good practice and on the right formats for this kind of document. What is expected, what is not, how far his ground extends. Describing a need, a use case, a business rule, an edge case: yes, and it is valuable. Deciding on a data model: no. That is not precision, it is an architectural decision made without the necessary information.
+Then I guide them, on good practice and on the right formats for this kind of document. What is expected, what is not, how far their ground extends. Describing a need, a use case, a business rule, an edge case: yes, and it is valuable. Deciding on a data model: no. That is not precision, it is an architectural decision made without the necessary information.
 
-And I remind him of something obvious that both sides of the table forget: I have AI tools too. I understand the intent, but he would be better off spending his tokens on the business side. Producing the architecture, the code, the data model is my job, and I am equipped for it. What nobody can do in his place is judge what a feature is worth to his company.
+And I remind them of something obvious that both sides of the table forget: I have AI tools too. I understand the intent, but they would be better off spending their tokens on the business side. Producing the architecture, the code, the data model is my job, and I am equipped for it. What nobody can do in their place is judge what a feature is worth to their company.
 
 None of this is a formatting problem, and no prompt will fix it. The specification can perfectly well be generated. I do it for OCF's internal projects, in a slightly unusual format, admittedly, but I do it. I will tell you about that format in a future post. Which changes nothing about the principle: it is only worth anything as the minutes of a conversation that took place, never as its replacement. The whole difference comes down to one question: does the document arrive before the discussion, or after?
 
