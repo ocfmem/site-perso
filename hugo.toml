@@ -121,6 +121,7 @@ pagination.pagerSize = 6
       missingBackButtonLabel = 'Back to homepage'
       minuteReadingTime = 'min read'
       words = 'words'
+      TocTitle = 'Contents'
 
       [languages.en.params.seo]
         personName = 'Meddy Menzikoff'
