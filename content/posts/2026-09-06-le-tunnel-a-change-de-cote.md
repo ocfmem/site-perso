@@ -9,25 +9,29 @@ tags = ["IA", "Développement", "Management"]
 
 Un client m'envoie quarante pages de spécifications. Le document est propre: sommaire, numérotation, critères d'acceptation. Page trente et une, un modèle de données. Onze tables, clés étrangères comprises.
 
-Ce modèle décrit un système qui n'existe pas. Pas un système futur: un système imaginaire, plausible, cohérent avec lui-même, et sans rapport avec celui que nous construisons ensemble depuis des mois.
+Problème: ce modèle décrit un système qui n'existe pas. Pas un système futur ou une évolution, mais bien un système imaginaire. Plausible et cohérent, mais sans rapport avec celui que nous construisons depuis des mois.
 
-Je précise tout de suite, parce que c'est le cœur du sujet: ce client fait bien son travail. Il a passé du temps sur ce document. Il l'a produit parce qu'il pensait, à raison, que fournir aux développeurs une spécification complète était la meilleure chose qu'il pouvait faire pour le projet.
+Je précise tout de suite, parce que c'est le cœur du sujet: ce client fait ce qui lui semble évident. Il a passé du temps sur ce document. Il l'a produit parce qu'il pensait que fournir aux développeurs une spécification complète était la meilleure chose qu'il pouvait faire pour le projet.
+
+Et il y a autre chose que je comprends sans effort: l'IA lui a donné les moyens de s'impliquer dans la construction technique comme il n'avait jamais pu le faire. Nous, développeurs, savons à quel point c'est grisant. Je vois mal comment lui reprocher d'y avoir pris goût.
 
 ## L'intention est bonne, et c'est ce qui rend le problème intéressant
 
-Pendant quinze ans, on a réclamé des specs. On s'est plaints des demandes en trois lignes dans un ticket, des « tu vois ce que je veux dire », des arbitrages métier qu'il fallait aller chercher à la petite cuillère. Le métier nous a entendus. Il arrive maintenant avec quarante pages.
+Pendant quinze ans, on a réclamé des specs. On s'est plaints des demandes en trois lignes dans un ticket, des besoins qui changeaient une fois le développement commencé, des arbitrages métier qu'on n'obtenait qu'en relançant trois fois. Le métier nous a entendus. Il arrive maintenant avec quarante pages.
 
 Personne ne triche. C'est ce qui rend le phénomène intéressant, et c'est aussi pourquoi il ne se corrigera pas tout seul: tous les signaux disent au porteur de projet qu'il a bien travaillé.
 
-Sauf que le document a trois défauts qui reviennent avec une régularité de métronome. Il est verbeux. Il se contredit d'une section à l'autre, parce que personne ne relit quarante pages avec l'attention qu'on accorde à quatre. Et il ignore l'existant.
+Sauf que le document a trois défauts qui reviennent avec une régularité de métronome. Il est verbeux. Il se contredit d'une section à l'autre parce que personne ne relit quarante pages avec l'attention qu'on accorde à quatre.
 
-Seul le troisième compte vraiment. Les deux premiers coûtent du temps de lecture ; celui-là coûte le projet. Et il a un symptôme facile à repérer: les extraits de code et les modèles de données. Quand une spécification contient un schéma de base, elle a cessé de décrire un besoin. Elle prescrit une solution, en s'appuyant sur un système que son auteur n'a jamais lu.
+Et il ignore l'existant.
+
+Les deux premiers défauts coûtent du temps de lecture; le troisième coûte le projet. Ce défaut annonce sa présence: du code, ou un modèle de données. Quand une spécification en contient, elle a cessé de décrire un besoin. Elle prescrit une solution, en s'appuyant sur un système que son auteur n'a jamais lu.
 
 ## La spec n'était pas l'entrée du design, c'était sa sortie
 
 La spécification n'a jamais valu par le document. Elle valait par la négociation qui le produisait.
 
-Cette négociation, c'est l'endroit où le métier découvre ce que coûte son idée: celle-ci, trois jours ; celle-là, trois mois, parce que la table des commandes est partagée avec la facturation. C'est aussi l'endroit où la tech découvre ce que le métier veut vraiment, qui n'est presque jamais ce qu'il avait demandé. Le document qui en sortait n'était que le procès-verbal de cette découverte.
+Cette négociation, c'est l'endroit où le métier découvre ce que coûte son idée: celle-ci, trois jours; celle-là, trois mois, parce que la table des commandes est partagée avec la facturation. C'est aussi l'endroit où la tech découvre ce que le métier veut vraiment, qui n'est presque jamais ce qu'il avait demandé. Le document qui en sortait n'était que le procès-verbal de cette découverte.
 
 Rien de neuf là-dedans, et c'est bien le problème: on le sait depuis vingt-cinq ans. En 2001, Ron Jeffries formalise les trois C de la user story (*Card, Conversation, Confirmation*) précisément pour distinguer la story « sociale » des pratiques documentaires d'avant. La carte n'est pas l'exigence: elle est le prétexte à la conversation où l'exigence se construit. En 2014, Jeff Patton résume l'affaire d'une phrase devenue la plus reprise de son livre: des documents partagés ne font pas une compréhension partagée. Il l'illustre par le jeu du téléphone, et par la sonde Mars Climate Orbiter, perdue en 1999 sur une histoire d'unités que chacun croyait évidente.
 
@@ -37,7 +41,7 @@ Alors, où vit la connaissance de l'existant ? Nulle part dans un document. Elle
 
 L'effet tunnel, dans ce métier, a toujours désigné le même risque: une équipe technique part la tête dans le guidon et ressort trois mois plus tard avec quelque chose qui n'était pas ce qu'il fallait. Tout l'arsenal agile (revues, démos, ateliers de cadrage, PO embarqué dans l'équipe) a été inventé pour percer des fenêtres dans ce tunnel.
 
-L'IA vient de creuser le même tunnel de l'autre côté de la table. Le porteur de projet travaille désormais seul, avec un interlocuteur qui ne le contredit jamais, ne connaît pas son système à moins qu'on le lui fournisse (accès aux bases, au code, etc.), et ne lui demande pas pourquoi. Il en ressort avec quarante pages et la conviction d'avoir avancé.
+L'IA vient de creuser le même tunnel de l'autre côté de la table. Le porteur de projet travaille désormais seul, avec un interlocuteur qui ne le contredit jamais et le félicite de ses idées brillantes, qui ne connaît pas son système à moins qu'on le lui fournisse (accès aux bases, au code, etc.), et qui ne lui demande pas pourquoi. Il en ressort avec quarante pages et la conviction d'avoir avancé.
 
 Personne n'a de rituel pour détecter ça, pour une raison simple: on n'a jamais eu besoin de protéger le métier de lui-même. Nos garde-fous regardent tous dans l'autre sens.
 
@@ -65,7 +69,7 @@ Et je lui rappelle une évidence qu'on oublie des deux côtés de la table: moi 
 
 Rien de tout cela n'est un problème de format, et aucun prompt ne le réglera. La spécification peut très bien être générée. Je le fais pour les projets internes d'OCF, dans un format un peu particulier, certes, mais je le fais. Je vous raconterai ce format dans un prochain article. Ce qui ne change rien au principe: elle ne vaut que comme compte rendu d'une conversation qui a eu lieu, jamais comme son remplaçant. Toute la différence tient dans une question: le document arrive-t-il avant la discussion, ou après ?
 
-Le tunnel, on savait le percer. Il va juste falloir mettre des fenêtres de l'autre côté.
+Je propose: discutons-en avant. Parce qu'au temps du papier, une spécification inutile calait au moins une porte. Le PDF n'a même pas cette qualité.
 
 ## Sources
 

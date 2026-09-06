@@ -10,25 +10,29 @@ tags = ["AI", "Development", "Management"]
 
 A client sends me forty pages of specifications. The document is clean: table of contents, numbering, acceptance criteria. Page thirty-one, a data model. Eleven tables, foreign keys included.
 
-That model describes a system which does not exist. Not a future system: an imaginary one, plausible, internally consistent, and unrelated to the one we have been building together for months.
+Problem: that model describes a system which does not exist. Not a future system or an evolution of it, but an imaginary one. Plausible and coherent, but unrelated to the one we have been building for months.
 
-Let me be clear straight away, because it is the heart of the matter: this client is doing his job well. He spent time on that document. He produced it because he believed, rightly, that handing developers a complete specification was the best thing he could do for the project.
+Let me be clear straight away, because it is the heart of the matter: this client is doing what seems obvious to him. He spent time on that document. He produced it because he believed that handing developers a complete specification was the best thing he could do for the project.
+
+And there is something else I understand without any effort: AI has given him the means to get involved in the technical build as he never could before. We developers know exactly how exhilarating that is. I find it hard to hold it against him.
 
 ## The intent is good, and that is what makes the problem interesting
 
-For fifteen years we asked for specs. We complained about three-line requests in a ticket, about "you know what I mean," about business decisions that had to be extracted with a teaspoon. The business heard us. It now turns up with forty pages.
+For fifteen years we asked for specs. We complained about three-line requests in a ticket, about requirements that changed once development had started, about business decisions we only got by asking three times. The business heard us. It now turns up with forty pages.
 
 Nobody is cheating. That is what makes the phenomenon interesting, and it is also why it will not correct itself: every signal tells the project owner that he did good work.
 
-Except the document has three defects that recur with metronomic regularity. It is verbose. It contradicts itself from one section to the next, because nobody reads forty pages with the attention they give to four. And it ignores what already exists.
+Except the document has three defects that recur with metronomic regularity. It is verbose. It contradicts itself from one section to the next because nobody reads forty pages with the attention they give to four.
 
-Only the third one really counts. The first two cost reading time ; that one costs the project. And it has a symptom that is easy to spot: the code snippets and the data models. When a specification contains a database schema, it has stopped describing a need. It is prescribing a solution, based on a system its author never read.
+And it ignores what already exists.
+
+The first two defects cost reading time; the third costs the project. This defect announces itself: code, or a data model. When a specification contains either, it has stopped describing a need. It is prescribing a solution, based on a system its author never read.
 
 ## The spec was not the input to design, it was the output
 
 A specification never had its value in the document. Its value was the negotiation that produced it.
 
-That negotiation is where the business discovers what its idea costs: this one, three days ; that one, three months, because the orders table is shared with billing. It is also where engineering discovers what the business actually wants, which is almost never what it asked for. The document that came out of it was only the minutes of that discovery.
+That negotiation is where the business discovers what its idea costs: this one, three days; that one, three months, because the orders table is shared with billing. It is also where engineering discovers what the business actually wants, which is almost never what it asked for. The document that came out of it was only the minutes of that discovery.
 
 Nothing new here, and that is exactly the problem: we have known it for twenty-five years. In 2001, Ron Jeffries formalised the three Cs of the user story (*Card, Conversation, Confirmation*) precisely to distinguish the "social" story from the documentary practices that came before. The card is not the requirement: it is the pretext for the conversation in which the requirement gets built. In 2014, Jeff Patton summed the matter up in a sentence that became the most quoted line of his book: shared documents are not shared understanding. He illustrates it with the telephone game, and with the Mars Climate Orbiter probe, lost in 1999 over a units mix-up everyone thought was obvious.
 
@@ -38,7 +42,7 @@ So where does knowledge of the existing system live? Nowhere in a document. It l
 
 Tunnel vision, in this trade, has always meant the same risk: an engineering team puts its head down and comes back out three months later with something that was not what was needed. The whole agile arsenal (reviews, demos, discovery workshops, a PO embedded in the team) was invented to cut windows into that tunnel.
 
-AI has just dug the same tunnel on the other side of the table. The project owner now works alone, with an interlocutor that never contradicts him, does not know his system unless it is handed over (access to the databases, to the code, and so on), and never asks him why. He comes out with forty pages and the conviction that he has made progress.
+AI has just dug the same tunnel on the other side of the table. The project owner now works alone, with an interlocutor that never contradicts him and congratulates him on his brilliant ideas, that does not know his system unless it is handed over (access to the databases, to the code, and so on), and that never asks him why. He comes out with forty pages and the conviction that he has made progress.
 
 Nobody has a ritual for detecting that, for a simple reason: we never needed to protect the business from itself. All our safeguards face the other way.
 
@@ -66,7 +70,7 @@ And I remind him of something obvious that both sides of the table forget: I hav
 
 None of this is a formatting problem, and no prompt will fix it. The specification can perfectly well be generated. I do it for OCF's internal projects, in a slightly unusual format, admittedly, but I do it. I will tell you about that format in a future post. Which changes nothing about the principle: it is only worth anything as the minutes of a conversation that took place, never as its replacement. The whole difference comes down to one question: does the document arrive before the discussion, or after?
 
-We knew how to cut through the tunnel. We are just going to have to put windows on the other side.
+My proposal: let us talk first. Because back in the days of paper, a useless specification would at least prop a door open. A PDF does not even have that going for it.
 
 ## Sources
 
