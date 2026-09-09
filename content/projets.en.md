@@ -24,6 +24,22 @@ Main contributions:
 
 **[Read the full case study →](/en/projects/hollowhost/)**
 
+## SEO Growth Swarm
+**Role: AI Engineer / Multi-agent systems architect**
+
+*The SEO Growth Swarm is a system of 11 autonomous AI agents that handles the complete SEO growth of a product, from competitive monitoring to the published article, with no human in the loop.*
+
+End-to-end design and development, from the multi-agent architecture to the production deployment.
+
+Main contributions:
+- Architecture of a **swarm of 11 AI agents** with no orchestrator, coordinated through shared state (blackboard pattern) and deployed as 14 independent scheduled jobs.
+- Strict **propose, validate, execute** separation, with a single two-stage quality gate (token-free mechanical checks, then a six-criteria LLM rubric evaluated against a reference of sourced facts).
+- Writing chain based on the **STORM** pattern: bounded agentic research, then writer, critic and fact-checker carried by distinct models.
+- **Automated publishing** into a production repository, protected by a scope breaker and by the CI, merging into `main` only after verifying the article is online.
+- **Multi-tenant architecture with zero custom code**: the whole identity of a product comes from configuration, validated by a second deployment with no code change.
+
+**[Read the full case study →](/en/projects/seo-growth-swarm/)**
+
 ## [SoundisiaK Studio](https://soundisiak.studio/)
 **Role: CTO and AWS serverless expert**
 
