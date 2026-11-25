@@ -9,7 +9,7 @@ Toc = true
 
 [HollowHost](https://hollowhost.com/) is a SaaS I designed and built end to end. It turns a GitHub repository into a hosted AI agent: the user connects their repository, configures environment variables and secrets from a web dashboard, then triggers executions on demand or on a cron schedule. They never see the infrastructure. No instance to size, no CI pipeline to write, no image registry to manage.
 
-The platform offers two execution modes: **AI Jobs**, on-demand or scheduled executions powered by AWS Lambda, and **Daemons**, persistent runtimes for agents that need to stay alive.
+The platform runs **AI Jobs**, on demand or on a schedule. A **daemon** mode, for hosting persistent agents, existed before being retired: its results were too unpredictable. [I explain why in this article](/en/posts/2026-11-25-heads-or-tails-you-pay-for-it/).
 
 **The platform in numbers**
 

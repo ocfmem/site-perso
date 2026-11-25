@@ -36,7 +36,9 @@
 {{- else if .IsPage -}}
   {{- $defaultImage := ("og-image.png" | absURL) -}}
   {{- $pageImage := $defaultImage -}}
-  {{- if (isset .Params "cover") -}}
+  {{- if (isset .Params "ogimage") -}}
+    {{- $pageImage = .Params.ogImage | absURL -}}
+  {{- else if (isset .Params "cover") -}}
     {{- $pageCover := .Param "cover" -}}
     {{- with (.Resources.GetMatch (.Param "cover")) -}}
       {{- $pageCover = .RelPermalink -}}
